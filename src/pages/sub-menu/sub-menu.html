@@ -1,0 +1,31 @@
+<!--
+  Generated template for the SubMenuPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sub Menu</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-item><ion-icon name="bookmark"></ion-icon>&nbsp;Sub Menu</ion-item>
+<ion-grid>
+  <ion-row *ngFor="let sm of SubMenuList">
+    <ion-col>
+      <img [src]="sm.img">
+    </ion-col>
+    <ion-col>
+      <span class="mnuTitle">{{sm.sub_menu_name}}</span><br/>
+      <span class="mnuPrice">LKR. {{sm.unit_price}}</span><br/>
+      <span class="NormalLinkBlue" (click)="viewDetails(sm.id)" ><ion-icon name="md-arrow-round-forward"></ion-icon>&nbsp;View Details</span> <br/>
+      <span class="NormalLinkGreen" (click)="addToCard({'SubMenuId': sm.id, 'SubMenuName':sm.sub_menu_name, 'UnitPrice':sm.unit_price, 'Qty': 1})" ><ion-icon ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon>&nbsp;Add to card</span>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
