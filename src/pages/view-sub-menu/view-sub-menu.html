@@ -1,0 +1,26 @@
+<!--
+  Generated template for the ViewSubMenuPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Sub Menu Detail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<img [src]="sMenuModel?.img">
+<span class="mnuTitle"> {{sMenuModel?.sub_menu_name}}</span><br/>
+<span class="mnuDsc">{{sMenuModel?.sub_menu_desc}}</span><br/>
+<ion-item>
+  <span style="float:left;" class="commonLabel">Unit price</span>
+  <span style="float:right;" class="commonLabel">LKR. {{sMenuModel?.unit_price}}</span>
+</ion-item><br/>
+<ion-item>
+  <span style="float:left;" class="commonLabel">Time taken to {{sMenuModel?.time_nos}}</span>
+  <span style="float:right;" class="commonLabel">{{sMenuModel?.time_taken}}</span>
+</ion-item>
+</ion-content>

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title style="text-align:center;">
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+      <!--<ion-slides autoplay="5000" loop="true" speed="3000">
+      <ion-slide>
+        <img src="http://skounis-dev.s3.amazonaws.com/mobile-apps/catalogue/assets/cat-a-8-1.png">
+      </ion-slide>
+      <ion-slide >
+        <img src="http://skounis-dev.s3.amazonaws.com/mobile-apps/catalogue/assets/cat-a-8-1.png">
+      </ion-slide>
+      <ion-slide >
+        <img src="http://skounis-dev.s3.amazonaws.com/mobile-apps/catalogue/assets/cat-a-8-1.png">
+      </ion-slide>
+    </ion-slides>-->
+
+  <div class="row colums-two">
+      <div class="card col home" (click)="ViewMenu()">
+					<h1><ion-icon name="bookmark" class="home-icon"></ion-icon></h1>
+					<h2 class="ng-binding">Menu</h2>
+			</div>
+      <div class="card col home" (click)="ViewCheckOut()">
+					<h1><ion-icon name="cart" class="home-icon" ></ion-icon></h1>
+					<h2 class="ng-binding">Checkout</h2>
+      </div>
+  </div>
+  <div class="row colums-two">
+      <div class="card col home">
+					<h1><ion-icon name="basket" class="home-icon"></ion-icon> </h1>
+					<h2 class="ng-binding">My Order</h2>
+			</div>
+      <div class="card col home">
+					<h1><ion-icon name="power" class="home-icon"></ion-icon></h1>
+					<h2 class="ng-binding">Off</h2>
+      </div>
+  </div>
+</ion-content>

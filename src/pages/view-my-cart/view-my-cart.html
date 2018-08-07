@@ -1,0 +1,42 @@
+<!--
+  Generated template for the ViewMyCartPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Item Checkout</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+<ion-list>
+  <ion-item-sliding *ngFor="let sm of SubMenuList">
+    <ion-item>
+      <ion-label item-start>{{sm.SubMenuName}}</ion-label>
+      <ion-label>{{sm.Qty}}</ion-label>
+      <ion-label item-end>{{sm.UnitPrice}}</ion-label>
+    </ion-item>
+    <ion-item-options side="right">
+      <button ion-button color="secondary" (click)="sm.Qty = sm.Qty + 1">
+        <span class="button-inner">
+          <ion-icon name="add-circle"></ion-icon>
+        </span>
+      </button>
+      <button (click)="sm.Qty > 1 ? sm.Qty = sm.Qty - 1 : sm.Qty = 1">
+        <span class="button-inner">
+        <ion-icon name="remove-circle"></ion-icon>
+        </span>
+      </button>
+
+    </ion-item-options>
+
+    <ion-item-options side="left">
+      <button ion-button color="danger" ion-button (click)="alertConfirm(sm.SubMenuId)"><ion-icon name="trash"></ion-icon></button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+<button ion-button full>Place Order</button>
+</ion-content>
