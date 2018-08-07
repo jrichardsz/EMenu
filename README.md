@@ -101,6 +101,6 @@ Put screenshoots here!!
 
 # Authors
 
-* **Richard Leon Ingaruca** - *Initial work* - [Jrichardsz](https://github.com/jrichardsz)
+* **Richard Leon Ingaruca** - [Jrichardsz](https://github.com/jrichardsz)
 
 * **Origin** - [https://github.com/shamique/EMenu.git](https://github.com/shamique/EMenu.git)
